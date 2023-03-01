@@ -1,0 +1,47 @@
+<div class="container bg-gray-50 flex flex-row justify-center items-center">
+  <div class="images-section hidden lg:block pt-3"></div>
+    <div class="login-section pt-2">
+        <div class="bg-white border border-gray-300 w-80 py-8 flex items-center flex-col mb-3">
+            <%= image_tag 'logo.png', class: "card-img-top" %>
+            <form class="mt-8 w-64 flex flex-col">
+            <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+              
+                <div class="mb-3 mt-4">
+                  <%= f.email_field :email, class:"text-xs w-full mb-2 rounded border bg-gray-100 border-gray-300 px-4 py-2 focus:outline-none focus:border-gray-400 active:outline-none", placeholder:"Phone number, username, or email"%>
+                </div>
+                <div class="mb-3">
+                  <%= f.password_field :password, class:"text-xs w-full mb-4 rounded border bg-gray-100 border-gray-300 px-4 py-2 focus:outline-none focus:border-gray-400 active:outline-none", id:"password", placeholder:"Password"%>
+                </div>
+                <%= f.submit "Log in", class: "text-sm text-center bg-blue-300 text-white py-1 px-6 w-full rounded font-medium"%>
+              </form>
+            <%end%>
+            <div class="flex justify-evenly space-x-2 w-64 mt-4">
+                <span class="bg-gray-300 h-px flex-grow t-2 relative top-2"></span>
+                <span class="flex-none uppercase text-xs text-gray-400 font-semibold">or</span>
+                <span class="bg-gray-300 h-px flex-grow t-2 relative top-2"></span>
+            </div>
+            <button class="mt-4 flex">
+                <%= image_tag("facebook.png", class: "facebook") %>
+                <span class="text-xs text-blue-900 font-semibold">Log in with Facebook</span>
+            </button>
+
+            <%# Flash messages %>
+            <div class=" border-white-500 text-blue-700 px-3 py-2" role="alert">
+                         <% if notice %>
+                      <p class="notice"><%= notice %></p>
+                    <% elsif alert %>
+                      <p class="alert"><%= alert %></p>
+                    <% end %>
+            </div>
+
+
+            <a href="#" class="text-xs text-blue-900 mt-4 cursor-pointer -mb-4">Forgot password?</a>
+        </div>
+        <div class="bg-white border border-gray-300 text-center w-80 py-4">
+            <span class="text-sm">Don't have an account?</span>
+            <%= link_to "Sign Up", new_user_registration_path, class: "text-blue-500 text-sm font-semibold" %>
+        </div>
+
+    </div>
+  </div>
+</div>
