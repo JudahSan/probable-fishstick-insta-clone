@@ -3,8 +3,9 @@
     <div class="login-section pt-2">
         <div class="bg-white border border-gray-300 w-80 py-8 flex items-center flex-col mb-3">
             <%= image_tag 'logo.png', class: "card-img-top" %>
-            <form class="mt-8 w-64 flex flex-col">
             <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+            <form class="mt-8 w-64 flex flex-col">
+            
               
                 <div class="mb-3 mt-4">
                   <%= f.email_field :email, class:"text-xs w-full mb-2 rounded border bg-gray-100 border-gray-300 px-4 py-2 focus:outline-none focus:border-gray-400 active:outline-none", placeholder:"Phone number, username, or email"%>
