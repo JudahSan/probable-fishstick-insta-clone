@@ -16,20 +16,8 @@
     <%= form.text_field :caption, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :longitude %>
-    <%= form.text_field :longitude, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
 
-  <div class="my-5">
-    <%= form.label :latitude %>
-    <%= form.text_field :latitude, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
 
-  <div class="my-5">
-    <%= form.label :user_id %>
-    <%= form.text_field :user_id, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
 
   <div class="my-5">
     <%= form.label :allow_comments %>
@@ -39,6 +27,11 @@
   <div class="my-5">
     <%= form.label :show_likes_count %>
     <%= form.check_box :show_likes_count, class: "block mt-2 h-5 w-5" %>
+  </div>
+
+  <div class="my-5">
+    <%= form.label :images, style: "display: block" %>
+    <%= form.file_field :images, multiple: true %>
   </div>
 
   <div class="inline">

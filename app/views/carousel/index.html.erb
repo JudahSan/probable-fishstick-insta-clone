@@ -1,0 +1,23 @@
+<div class="max-w-sm mx-auto my-4">
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <% @images.each do |image| %>
+        <div class="swiper-slide">
+          <%= image_tag image %>
+        </div>
+      <% end %>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var mySwiper = new Swiper('.swiper-container', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  });
+</script>
