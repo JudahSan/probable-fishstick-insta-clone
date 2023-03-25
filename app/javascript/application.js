@@ -3,5 +3,3 @@ import "@hotwired/turbo-rails"
 import "controllers"
 import 'flowbite'
 
-require("flickity");
-import './flickity';
