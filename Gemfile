@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Use Tailwind CSS [https://github.com/rails/tailwindcss-rails]
 gem "tailwindcss-rails"
 
+# font-awesome
+gem "font-awesome-sass", "~> 6.3.0"
+
 # Devise
 gem 'devise'
 
