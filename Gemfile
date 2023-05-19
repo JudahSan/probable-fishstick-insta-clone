@@ -33,6 +33,9 @@ gem "font-awesome-sass", "~> 6.3.0"
 # Devise
 gem 'devise'
 
+
+gem 'erb-formatter'
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
