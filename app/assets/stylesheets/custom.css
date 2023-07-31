@@ -1,31 +1,24 @@
 html {
   height: 100vh;
 }
-
 body {
   background-color: #fafafa;
   height: 100;
-
 }
-
 .home-sections {
   height: 100%;
   width: 80%;
 }
-
 .images-section, .login-section {
   height: 95%;
   width: 45%;
   background-position-x: right;
-
 }
-
 .signup-section {
   height: 95%;
   width: 25%;
   background-position-x: right;
 }
-
 .images-section {
   background-image: url(home-phone-bg.jpg);
   background-size: contain;
@@ -33,27 +26,85 @@ body {
   max-width: 100%;
   max-height: 100%;
 }
-
 .card-img-top {
   max-width: 50;
   align-self: center;
 }
-
-.line-text{
-  padding: 0.5rem; /*spacing */
+.line-text {
+  padding: 0.5rem;
+ /*spacing */
   font-size: small;
   margin: 0;
 }
-
 .line {
   flex: 1;
   height: 1px;
-  background-color: rgb(139, 137, 137);
+  background-color: #8b8989;
 }
-
 .facebook {
   max-width: 1rem;
   height: auto;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   background-image: url(facebook.png);
+}
+.carousel {
+  overflow: hidden;
+  touch-action: none;
+}
+.carousel-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.carousel-cell img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.carousel-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 10;
+}
+.carousel-nav button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.carousel-nav button:hover {
+  transform: scale(1.2);
+}
+.carousel-nav .carousel-prev {
+  margin-right: auto;
+}
+.carousel-nav .carousel-next {
+  margin-left: auto;
+}
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+.post-image {
+  height: 468px; /* set the height to your desired value */
+  width: 584px; /* set the width to your desired value */
 }

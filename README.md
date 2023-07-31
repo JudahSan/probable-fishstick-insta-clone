@@ -34,3 +34,5 @@ Things you may want to cover:
 # Fix dropdown responsiveness
 
 - [Flowbite docs](https://flowbite.com/docs/getting-started/quickstart/#include-via-cdn)
+
+- Active storage

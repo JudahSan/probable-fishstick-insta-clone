@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "flowbite": "^1.6.3"
+    "flickity": "^3.0.0",
+    "flowbite": "^1.6.3",
+    "swiper": "^9.1.0"
   }
 }
